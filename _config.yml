@@ -1,0 +1,33 @@
+title: Your Name
+description: Personal website
+url: https://bmaidu.com
+baseurl: ""
+
+theme: minima
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-scholar
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Author/profile (edit these)
+author:
+  name: Your Name
+  email: you@example.com
+  github_username: your-username
+  linkedin: your-linkedin-handle
+  scholar: https://scholar.google.com/
+
+# Scholar configuration (basic)
+scholar:
+  style: apa
+  locale: en
+  source: ./_bibliography
+  bibliography: papers.bib
+  bibliography_template: bibliography
+  sort_by: year, month
+  order: descending
+
+# Navigation (uses _data/navigation.yml)
