@@ -1,5 +1,34 @@
+title: Your Name
+description: Personal website
+url: ""          # keep empty while using github.io; set to https://bmaidu.com later
+baseurl: ""      # keep empty for user.github.io sites
+
+theme: minima
+
+markdown: kramdown
+
+plugins:
+  - jekyll-scholar
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+author:
+  name: Your Name
+  email: you@example.com
+
+# Top/footer external links used by the layout
 links:
-  scholar: https://scholar.google.com/citations?user=qlRTEOYAAAAJ&hl=en
-  researchgate: https://www.researchgate.net/profile/Bahetihazi-Maidu
-  github: https://github.com/bmaidu
-  linkedin: https://www.linkedin.com/in/bahetihazi-maidu-6578b92bb
+  scholar: https://scholar.google.com/citations?user=YOURID
+  researchgate: https://www.researchgate.net/profile/Your-Name
+  github: https://github.com/your-username
+  linkedin: https://www.linkedin.com/in/your-handle/
+
+# Jekyll Scholar basic config
+scholar:
+  style: apa
+  locale: en
+  source: ./_bibliography
+  bibliography: papers.bib
+  bibliography_template: bibliography
+  sort_by: year, month
+  order: descending
