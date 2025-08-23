@@ -11,4 +11,4 @@ Welcome! I'm {{ site.author.name }}. This is my academic profile site.
 - **Publications:** selected papers from my BibTeX
 - **CV:** PDF resume
 
-Use the top navigation to explore. 
+Use the top navigation to explore.
