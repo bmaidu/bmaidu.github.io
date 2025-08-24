@@ -41,7 +41,7 @@ Left ventricular color-Doppler ultrasound imaging measures 1D flow velocity towa
   justify-content: flex-start;
 }
 .video-row video {
-  width: 250px;          
+  width: 280px;          
   max-width: 100%;
   border-radius: 6px;    
   box-shadow: 0 2px 6px rgba(0,0,0,0.15); 
