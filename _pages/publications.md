@@ -2,6 +2,7 @@
 layout: default
 title: Publications
 permalink: /publications/
+nav: true
 ---
 
 <h2>Journal & Conference Publications</h2>
