@@ -41,14 +41,14 @@ Left ventricular color-Doppler ultrasound imaging measures 1D flow velocity towa
   justify-content: flex-start;
 }
 .video-row video {
-  width: 300px;          
+  width: 350px;          
   max-width: 100%;
   border-radius: 6px;    
   box-shadow: 0 2px 6px rgba(0,0,0,0.15); 
 }
 .video-container {
   position: relative;
-  width: 300px; /* same as your video width */
+  width: 350px; 
 }
 
 .video-title {
@@ -68,16 +68,14 @@ Left ventricular color-Doppler ultrasound imaging measures 1D flow velocity towa
   position: absolute;
   top: 10px;
   right: 10px;
-  width: 60px;  /* make small */
-  border: 2px solid #fff;
-  border-radius: 4px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  width: 30px;  
+  border-radius: 0;
 }
 </style>
 
 <div class="video-row">
   <div class="video-container">
-    <div class="video-title">VR Train</div>
+    <div class="video-title">Color-Doppler Images Radial Velocity</div>
     <video controls>
       <source src="/assets/VR_train.mp4" type="video/mp4">
     </video>
@@ -85,7 +83,7 @@ Left ventricular color-Doppler ultrasound imaging measures 1D flow velocity towa
   </div>
 
   <div class="video-container">
-    <div class="video-title">Vmag Prediction</div>
+    <div class="video-title">Vector Velocity Field Reconstruction</div>
     <video controls>
       <source src="/assets/Vmag_pred.mp4" type="video/mp4">
     </video>
@@ -93,7 +91,7 @@ Left ventricular color-Doppler ultrasound imaging measures 1D flow velocity towa
   </div>
 
   <div class="video-container">
-    <div class="video-title">Pressure Prediction</div>
+    <div class="video-title">Pressure Field Reconstruction</div>
     <video controls>
       <source src="/assets/Pressure_pred.mp4" type="video/mp4">
     </video>
