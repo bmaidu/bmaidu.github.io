@@ -30,7 +30,7 @@ title: Home
 
 # Most Recent Research and Publication Snippet
 
-Left ventricular color-Doppler ultrasound imaging measures 1D flow velocity towards and away from the transducer on a 2D plane, missing complete flow information and pattern. Intraventricular vector flow mapping (VFM) technique has gained traction in the past decade to reconstruct 2D flow maps using color-Doppler images by integrating mass conservation equation. However, traditional VFM techniques do not consider momentum balance (e.g., Navier-Stokes equations) and remain sensitive to imaging artifacts. <a href="https://doi.org/10.1016/j.compbiomed.2024.109476">In our most recent work</a>, we developed AI-VFM leveraging recent advances in physics-informed deep learning to reconstruct super-resolved and complete vector flow and pressure maps.
+Color-Doppler ultrasound imaging measures 1D flow velocity towards and away from the transducer on a 2D plane, missing detailed flow information and pattern. Intraventricular vector flow mapping (VFM) technique has gained traction in the past decade to reconstruct 2D flow maps using color-Doppler images by integrating mass conservation equation. However, this technique does not consider momentum balance (e.g., Navier-Stokes equations) and remain sensitive to imaging artifacts. <a href="https://doi.org/10.1016/j.compbiomed.2024.109476">In our most recent work</a>, we developed AI-VFM leveraging recent advances in physics-informed deep learning to reconstruct 2D super-resolved velocity and pressure maps. 3D extension and applications of this work is in progress.
 
 <!-- Page-specific CSS -->
 <style>
@@ -89,7 +89,7 @@ Left ventricular color-Doppler ultrasound imaging measures 1D flow velocity towa
 
 <div class="video-row">
   <div class="video-container">
-    <div class="video-title">Color-Doppler Images Radial Velocity</div>
+    <div class="video-title">Color-Doppler Images (training data)</div>
     <video autoplay muted playsinline loop controls>
       <source src="/assets/VR_train.mp4" type="video/mp4">
     </video>
