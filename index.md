@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-# {{ Bahetihazi Maidu }}
+Bahetihazi Maidu
 
 Welcome to my personal webpage! 
 
