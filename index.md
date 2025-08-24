@@ -3,12 +3,9 @@ layout: default
 title: Home
 ---
 
-# {{ site.author.name }}
+# {{ Bahetihazi Maidu }}
 
-Welcome! I'm {{ site.author.name }}. This is my academic profile site.
+Welcome to my personal webpage! 
 
-- **About:** background, interests, and contact
-- **Publications:** selected papers from my BibTeX
-- **CV:** PDF resume
-
-Use the top navigation to explore.
+I am a PhD student at Mechanical Engineering Department in University of Washington under the supervision of [Dr. Juan Carlos del Alamo](https://www.engr.washington.edu/facresearch/newfaculty/2019/delAlamo). Prior to joining del Alamo lab at UW, I obtained my masters degree at Mechanical and Aerospace Engineering Department in University of California San Diego where I specialized in computational modeling and cardiovascular fluid dynamics.
+My PhD research centers on the development of biomedical image–based, physics-informed deep learning approaches for reconstructing flow fields and stratifying cardiovascular disease risk from incomplete medical imaging data, with a specific focus on stroke risk in the left atrium and left ventricle.
