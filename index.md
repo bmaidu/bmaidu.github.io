@@ -23,3 +23,19 @@ title: Home
   </div>
 
 </div>
+
+---
+
+## My Research Videos
+
+<div style="display:flex;gap:20px;flex-wrap:wrap;justify-content:flex-start">
+  <video width="360" controls>
+    <source src="/assets/VR_train.mp4" type="video/mp4">
+  </video>
+  <video width="360" controls>
+    <source src="/assets/Vmag_pred.mp4" type="video/mp4">
+  </video>
+  <video width="360" controls>
+    <source src="/assets/Pressure_pred.mp4" type="video/mp4">
+  </video>
+</div>
