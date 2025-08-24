@@ -63,13 +63,27 @@ Left ventricular color-Doppler ultrasound imaging measures 1D flow velocity towa
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
-/* Overlay figures */
+/* Overlay figure container */
 .overlay-figure {
   position: absolute;
-  top: 10px;
+  top: 30px;
   right: 10px;
-  width: 30px;  
+  text-align: center;
+}
+
+/* Overlay image */
+.overlay-figure img {
+  width: 40px;  
   border-radius: 0;
+  display: block;
+}
+
+/* Overlay caption */
+.overlay-caption {
+  margin-top: 2px;
+  font-size: 12px;
+  color: white;
+  text-shadow: 0 0 3px rgba(0,0,0,0.7);
 }
 </style>
 
@@ -79,7 +93,10 @@ Left ventricular color-Doppler ultrasound imaging measures 1D flow velocity towa
     <video controls>
       <source src="/assets/VR_train.mp4" type="video/mp4">
     </video>
-    <img class="overlay-figure" src="/assets/Dop_cbar.png" alt="Overlay figure">
+    <div class="overlay-figure">
+      <img src="/assets/Dop_cbar.png" alt="Overlay figure">
+      <div class="overlay-caption">cm/s</div>
+    </div>
   </div>
 
   <div class="video-container">
@@ -87,7 +104,10 @@ Left ventricular color-Doppler ultrasound imaging measures 1D flow velocity towa
     <video controls>
       <source src="/assets/Vmag_pred.mp4" type="video/mp4">
     </video>
-    <img class="overlay-figure" src="/assets/Vmag_cbar.png" alt="Overlay figure">
+    <div class="overlay-figure">
+      <img src="/assets/Vmag_cbar.png" alt="Overlay figure">
+      <div class="overlay-caption">cm/s</div>
+    </div>
   </div>
 
   <div class="video-container">
@@ -95,6 +115,9 @@ Left ventricular color-Doppler ultrasound imaging measures 1D flow velocity towa
     <video controls>
       <source src="/assets/Pressure_pred.mp4" type="video/mp4">
     </video>
-    <img class="overlay-figure" src="/assets/P_cbar.png" alt="Overlay figure">
+    <div class="overlay-figure">
+      <img src="/assets/P_cbar.png" alt="Overlay figure">
+      <div class="overlay-caption">mmHg</div>
+    </div>
   </div>
 </div>
