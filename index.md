@@ -81,7 +81,7 @@ Left ventricular color-Doppler ultrasound imaging measures 1D flow velocity towa
 /* Overlay caption */
 .overlay-caption {
   margin-top: 2px;
-  font-size: 12px;
+  font-size: 15px;
   color: white;
   text-shadow: 0 0 3px rgba(0,0,0,0.7);
 }
@@ -90,7 +90,7 @@ Left ventricular color-Doppler ultrasound imaging measures 1D flow velocity towa
 <div class="video-row">
   <div class="video-container">
     <div class="video-title">Color-Doppler Images Radial Velocity</div>
-    <video controls>
+    <video autoplay muted playsinline controls>
       <source src="/assets/VR_train.mp4" type="video/mp4">
     </video>
     <div class="overlay-figure">
@@ -100,8 +100,8 @@ Left ventricular color-Doppler ultrasound imaging measures 1D flow velocity towa
   </div>
 
   <div class="video-container">
-    <div class="video-title">Vector Velocity Field Reconstruction</div>
-    <video controls>
+    <div class="video-title">Velocity Vector Field Reconstruction</div>
+    <video autoplay muted playsinline controls>
       <source src="/assets/Vmag_pred.mp4" type="video/mp4">
     </video>
     <div class="overlay-figure">
@@ -112,7 +112,7 @@ Left ventricular color-Doppler ultrasound imaging measures 1D flow velocity towa
 
   <div class="video-container">
     <div class="video-title">Pressure Field Reconstruction</div>
-    <video controls>
+    <video autoplay muted playsinline controls>
       <source src="/assets/Pressure_pred.mp4" type="video/mp4">
     </video>
     <div class="overlay-figure">
@@ -121,3 +121,33 @@ Left ventricular color-Doppler ultrasound imaging measures 1D flow velocity towa
     </div>
   </div>
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const videos = document.querySelectorAll(".video-container video");
+
+  let readyCount = 0;
+  videos.forEach(video => {
+    // Count each video once when it's ready to play through
+    const onReady = () => {
+      video.removeEventListener("canplaythrough", onReady);
+      readyCount++;
+      if (readyCount === videos.length) {
+        videos.forEach(v => v.currentTime = 0);
+        videos.forEach(v => v.play().catch(() => {}));
+      }
+    };
+    video.addEventListener("canplaythrough", onReady);
+  });
+
+  // Keep them in sync if the user pauses/plays one
+  videos.forEach(video => {
+    video.addEventListener("play", () => {
+      videos.forEach(v => { if (v !== video && v.paused) v.play().catch(() => {}); });
+    });
+    video.addEventListener("pause", () => {
+      videos.forEach(v => { if (v !== video && !v.paused) v.pause(); });
+    });
+  });
+});
+</script>
