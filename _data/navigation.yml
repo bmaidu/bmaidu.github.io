@@ -1,8 +1,12 @@
 - title: Home
   url: /
+  icon: home
+
 - title: Publications
   url: /publications/
+  icon: book
+
 - title: CV
   url: /assets/CV.pdf
   external: true
- 
+  icon: file
