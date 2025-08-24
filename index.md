@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-<div style="width:100%;max-width:1100px;margin:0 auto">
+<div style="width:100%;max-width:1500px;margin:0 auto">
   <div style="display:flex;align-items:flex-start;gap:20px;flex-wrap:wrap">
 
     <!-- Left side: Bio text -->
