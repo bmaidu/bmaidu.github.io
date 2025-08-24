@@ -29,7 +29,8 @@
     </style>
   </head>
   <body>
-    <nav class="topnav">
+    
+<nav class="topnav">
   {% for item in site.data.navigation %}
     {% if item.external %}
       <a href="{{ item.url }}" target="_blank">{{ item.title }}</a>
@@ -38,24 +39,33 @@
     {% endif %}
   {% endfor %}
 
-  <!-- Inline socials after CV -->
-  <span class="socials-inline">
+  <!-- Header socials -->
+  <div class="socials" style="margin-left:1.5rem;">
     {% if site.links.scholar %}
-    <a href="{{ site.links.scholar }}" target="_blank" rel="noopener" aria-label="Google Scholar">
+    <a href="{{ site.links.scholar }}" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24"><path d="M12 3 1 8l11 5 9-4.1V17h2V8L12 3zm0 7.8L5.1 8 12 4.2 18.9 8 12 10.8zM6 18c0-1.7 2.7-3 6-3s6 1.3 6 3-2.7 3-6 3-6-1.3-6-3z"/></svg>
+      Scholar
+    </a>
+    {% endif %}
+    {% if site.links.researchgate %}
+    <a href="{{ site.links.researchgate }}" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M4 4h9a5 5 0 110 10H9v6H4V4zm5 7h4a2 2 0 100-4H9v4zm10 1h-3l4 7h-4l-4-7h7z"/></svg>
+      ResearchGate
     </a>
     {% endif %}
     {% if site.links.github %}
-    <a href="{{ site.links.github }}" target="_blank" rel="noopener" aria-label="GitHub">
+    <a href="{{ site.links.github }}" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.19-3.37-1.19-.45-1.14-1.1-1.44-1.1-1.44-.9-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.36 1.08 2.93.83.09-.66.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.28.1-2.66 0 0 .85-.27 2.8 1.02a9.7 9.7 0 015.1 0c1.95-1.3 2.8-1.02 2.8-1.02.55 1.38.2 2.41.1 2.66.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.86v2.75c0 .27.18.58.69.48A10 10 0 0012 2z"/></svg>
+      GitHub
     </a>
     {% endif %}
     {% if site.links.linkedin %}
-    <a href="{{ site.links.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">
+    <a href="{{ site.links.linkedin }}" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24"><path d="M4 3a2 2 0 100 4 2 2 0 000-4zM3 8h2.9v13H3V8zm6 0h2.8v1.8h.04C12.98 9.06 13.95 8 15.5 8 18.6 8 20 9.6 20 12.3V21H17v-7c0-1.67-.6-2.8-2.1-2.8-1.14 0-1.82.77-2.12 1.51-.11.27-.14.64-.14 1.01V21H9V8z"/></svg>
+      LinkedIn
     </a>
     {% endif %}
-  </span>
+  </div>
 </nav>
 
     <!-- Main content -->
