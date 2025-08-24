@@ -26,7 +26,9 @@ title: Home
 
 ---
 
-## My Research Videos
+## Research Snippet
+
+Left ventricular color-Doppler ultrasound imaging measures 1D flow velocity towards and away from the transducer on a 2D plane. 
 
 <div style="display:flex;gap:20px;flex-wrap:wrap;justify-content:flex-start">
   <video width="360" controls>
