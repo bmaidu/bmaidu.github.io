@@ -46,16 +46,57 @@ Left ventricular color-Doppler ultrasound imaging measures 1D flow velocity towa
   border-radius: 6px;    
   box-shadow: 0 2px 6px rgba(0,0,0,0.15); 
 }
+.video-container {
+  position: relative;
+  width: 300px; /* same as your video width */
+}
+
+.video-title {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.video-container video {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Overlay figures */
+.overlay-figure {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 60px;  /* make small */
+  border: 2px solid #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
 </style>
 
 <div class="video-row">
-  <video controls>
-    <source src="/assets/VR_train.mp4" type="video/mp4">
-  </video>
-  <video controls>
-    <source src="/assets/Vmag_pred.mp4" type="video/mp4">
-  </video>
-  <video controls>
-    <source src="/assets/Pressure_pred.mp4" type="video/mp4">
-  </video>
+  <div class="video-container">
+    <div class="video-title">VR Train</div>
+    <video controls>
+      <source src="/assets/VR_train.mp4" type="video/mp4">
+    </video>
+    <img class="overlay-figure" src="/assets/Dop_cbar.png" alt="Overlay figure">
+  </div>
+
+  <div class="video-container">
+    <div class="video-title">Vmag Prediction</div>
+    <video controls>
+      <source src="/assets/Vmag_pred.mp4" type="video/mp4">
+    </video>
+    <img class="overlay-figure" src="/assets/Vmag_cbar.png" alt="Overlay figure">
+  </div>
+
+  <div class="video-container">
+    <div class="video-title">Pressure Prediction</div>
+    <video controls>
+      <source src="/assets/Pressure_pred.mp4" type="video/mp4">
+    </video>
+    <img class="overlay-figure" src="/assets/P_cbar.png" alt="Overlay figure">
+  </div>
 </div>
