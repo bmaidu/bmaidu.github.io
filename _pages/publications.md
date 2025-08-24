@@ -5,6 +5,13 @@ permalink: /publications/
 nav: true
 ---
 
+<style>
+  ol li {
+    margin-bottom: 1rem;   /* adjust spacing*/
+    line-height: 1.5;      /* optional, improves readability */
+  }
+</style>
+
 <h2>Journal & Conference Publications</h2>
 <ol>
   <li>
