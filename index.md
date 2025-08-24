@@ -13,6 +13,8 @@ title: Home
     <p>I am a PhD student at the Mechanical Engineering Department at the University of Washington under the supervision of <a href="https://www.engr.washington.edu/facresearch/newfaculty/2019/delAlamo">Dr. Juan Carlos del Alamo</a>. Prior to joining del Alamo lab at UW, I obtained my master's degree at the Mechanical and Aerospace Engineering Department at the University of California San Diego where I specialized in computational modeling and cardiovascular fluid dynamics.</p>
 
     <p>My PhD research centers on the development of biomedical image–based, physics-informed deep learning approaches for reconstructing flow fields and stratifying cardiovascular disease risk from incomplete medical imaging data, with a specific focus on stroke risk in the left atrium and left ventricle.</p>
+
+    <p>Outside of work, I like hiking, taking road trips, and enjoying nature with families and friends.</p>
   </div>
 
   <!-- Right side: Bio photo -->
