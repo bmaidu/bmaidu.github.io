@@ -16,6 +16,15 @@
       .topnav a {
         text-decoration: none; font-weight: 600; color: inherit;
       }
+      .topnav a {
+        display: inline-flex;
+        align-items: center;
+        gap: .4rem;            /* space between icon and text */
+      }
+      .topnav a svg {
+        width: 18px;
+        height: 18px;
+      }
       .wrapper { max-width: 1200px; margin: 0 auto; padding: 1.5rem; }
       .page-content p { line-height: 1.6; }
 
@@ -32,15 +41,21 @@
     
 <nav class="topnav">
   {% for item in site.data.navigation %}
-    {% if item.external %}
-      <a href="{{ item.url }}" target="_blank">{{ item.title }}</a>
-    {% else %}
-      <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
-    {% endif %}
+    <a href="{% if item.external %}{{ item.url }}{% else %}{{ item.url | relative_url }}{% endif %}"
+       {% if item.external %}target="_blank" rel="noopener"{% endif %}>
+      {% if item.icon == "home" %}
+        <svg viewBox="0 0 24 24"><path d="M12 3l9 8h-3v9h-4v-6H10v6H6v-9H3z"/></svg>
+      {% elsif item.icon == "book" %}
+        <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 006.5 22H20v-2H6.5a.5.5 0 01-.5-.5V4H4v15.5zM8 4h10a2 2 0 012 2v14h-2V6H8V4z"/></svg>
+      {% elsif item.icon == "file" %}
+        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16c0 1.1.9 2 2 2h12a2 2 0 002-2V8l-6-6zm0 2l4 4h-4V4z"/></svg>
+      {% endif %}
+      {{ item.title }}
+    </a>
   {% endfor %}
 
-  <!-- Header socials -->
-  <div class="socials" style="margin-left:1.5rem;">
+  <!-- Socials after CV (unchanged) -->
+  <div class="socials" style="margin-left:1rem;">
     {% if site.links.scholar %}
     <a href="{{ site.links.scholar }}" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24"><path d="M12 3 1 8l11 5 9-4.1V17h2V8L12 3zm0 7.8L5.1 8 12 4.2 18.9 8 12 10.8zM6 18c0-1.7 2.7-3 6-3s6 1.3 6 3-2.7 3-6 3-6-1.3-6-3z"/></svg>
