@@ -28,7 +28,7 @@ title: Home
 
 ---
 
-## Research Snippet
+# Research Snippet
 
 Left ventricular color-Doppler ultrasound imaging measures 1D flow velocity towards and away from the transducer on a 2D plane, missing complete flow information and pattern. Intraventricular vector flow mapping (VFM) technique has gained traction in the past decade to reconstruct 2D flow maps using color-Doppler images by integrating mass conservation equation. However, traditional VFM techniques do not consider momentum balance (e.g., Navier-Stokes equations) and remain sensitive to imaging artifacts. In our most recent work, we developed AI-VFM leveraging recent advances in physics-informed deep learning to reconstruct super-resolved and complete vector flow and pressure maps.
 
@@ -41,7 +41,7 @@ Left ventricular color-Doppler ultrasound imaging measures 1D flow velocity towa
   justify-content: flex-start;
 }
 .video-row video {
-  width: 280px;          
+  width: 300px;          
   max-width: 100%;
   border-radius: 6px;    
   box-shadow: 0 2px 6px rgba(0,0,0,0.15); 
