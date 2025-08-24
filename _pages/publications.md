@@ -7,7 +7,7 @@ nav: true
 
 <style>
   ol li {
-    margin-bottom: 2rem;   /* adjust spacing*/
+    margin-bottom: 1.5rem;   /* adjust spacing*/
     line-height: 1.5;      /* optional, improves readability */
   }
 </style>
