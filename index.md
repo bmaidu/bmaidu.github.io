@@ -28,7 +28,7 @@ title: Home
 
 ---
 
-# Most Recent Research and Publication Snippet
+# My Recent Research and Publication Snippet
 
 Color-Doppler ultrasound imaging measures 1D flow velocity towards and away from the transducer on a 2D plane, missing detailed flow information and pattern. Intraventricular vector flow mapping (VFM) technique has gained traction in the past decade to reconstruct 2D flow maps using color-Doppler images by integrating mass conservation equation. However, this technique does not consider momentum balance (e.g., Navier-Stokes equations) and remain sensitive to imaging artifacts. 
 
