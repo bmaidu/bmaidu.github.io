@@ -20,7 +20,7 @@ title: Home
   
     <!-- Right side: Bio photo -->
     <div style="flex:1;min-width:250px;text-align:center">
-      <img src="/assets/bio.jpg" alt="Bahetihazi Maidu" style="width:320px;max-width:100%;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.2)">
+      <img src="/assets/bio.jpg" alt="Bahetihazi Maidu" style="max-width:100%;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.2)">
     </div>
 
   </div>
